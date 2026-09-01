@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FantasyAI - Create Your Fantasy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a0a1a 50%, #0a0a0a 100%);
+            color: #fff;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff4757, #ff6b81);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        h1 {
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #fff, #ff4757);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.1;
+        }
+        
+        .subtitle {
+            font-size: 24px;
+            color: #ccc;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .sample-image {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            background: linear-gradient(45deg, #333, #555);
+            border-radius: 16px;
+            margin: 40px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 18px;
+            border: 2px dashed #555;
+        }
+        
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin: 60px 0;
+        }
+        
+        .feature {
+            text-align: center;
+            max-width: 250px;
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #ff4757, #ff6b81);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+        
+        .feature h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .feature p {
+            color: #aaa;
+            font-size: 16px;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 71, 87, 0.1);
+            border-radius: 24px;
+            margin: 40px auto;
+            max-width: 800px;
+        }
+        
+        .pricing {
+            margin-bottom: 30px;
+        }
+        
+        .price {
+            font-size: 72px;
+            font-weight: bold;
+            color: #ff4757;
+        }
+        
+        .price-original {
+            font-size: 36px;
+            color: #666;
+            text-decoration: line-through;
+            margin-left: 20px;
+        }
+        
+        .urgency {
+            color: #ff4757;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .email-form {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        input[type="email"] {
+            flex: 1;
+            min-width: 250px;
+            padding: 16px 24px;
+            border: none;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            font-size: 16px;
+            outline: none;
+        }
+        
+        input[type="email"]::placeholder {
+            color: #888;
+        }
+        
+        button {
+            padding: 16px 32px;
+            background: linear-gradient(45deg, #ff4757, #ff6b81);
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 71, 87, 0.4);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 36px; }
+            .subtitle { font-size: 18px; }
+            .price { font-size: 48px; }
+            .features { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">FantasyAI</div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Create Your Fantasy in Seconds</h1>
+            <p class="subtitle">AI-generated adult content customized to your desires. Private. Unlimited. Yours.</p>
+            
+            <div class="sample-image">[Upload Sample Image Here]</div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">✨</div>
+                    <h3>Custom Scenarios</h3>
+                    <p>Any scene, any style, any fantasy you can imagine</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Private & Secure</h3>
+                    <p>No data stored. Your generations are yours alone</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">∞</div>
+                    <h3>Unlimited Generations</h3>
+                    <p>Create as many unique images as you want</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta-section">
+        <div class="pricing">
+            <span class="price">$49</span>
+            <span class="price-original">$149</span>
+        </div>
+        <p class="urgency">⚡ Only 50 founding member spots available</p>
+        
+        <form class="email-form" onsubmit="event.preventDefault(); alert('Thanks! We will contact you soon.');">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Get Early Access</button>
+        </form>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2024 FantasyAI. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
